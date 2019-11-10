@@ -55,6 +55,7 @@ h2._left:after {
 
 h2._white {
     color: #ffffff;
+    margin-bottom: 32px;
 }
 
 h2._white:after {
@@ -86,9 +87,10 @@ h2._white:after {
 }
 
 .download__p {
-    margin-bottom: 37px;
+    margin-bottom: 31px;
     color: #ffffff;
     font-size: 16px;
+    font-family: 'Raleway Light', sans-serif;
 }
 
 .benefit__image-wrap {
@@ -125,11 +127,11 @@ h2._white:after {
     width: 100%;
     height: 320px;
 }
-
+/* Поставил внутренний отступ 66px, чтобы совпало при наложении. В исходнике 75px */
 .download {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 66px 0;
 }
 
 .download_link {
