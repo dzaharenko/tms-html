@@ -65,7 +65,7 @@ h2.download_white:after {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 110px 0;
+    padding: 110px 0 105px 0;
 }
 
 .row {
@@ -113,12 +113,25 @@ h2.download_white:after {
     margin-bottom: 22px;
 }
 
+.pricing_container_color {
+    height: 880px;
+    background-color: #f5f5f5;
+}
+
+.pricing_container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+
 .download_container {
     width: 100%;
     height: 320px;
     -webkit-background-size: 100%;
     background-image: url(../images/u25_state0.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .download_container_color {
@@ -131,7 +144,7 @@ h2.download_white:after {
 .download {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 66px 0;
+    padding: 70px 0;
 }
 
 .download_link {
@@ -142,4 +155,184 @@ h2.download_white:after {
     height: 42px;
     margin-bottom: 22px;
     border: 2px solid #ffffff;
+}
+
+/* колонки */
+
+.cell-1 {
+    padding: 35px 20px;
+}
+
+.cell-3 {
+    padding: 35px 20px;
+}
+
+
+.pricing_base_1 {
+    background-color: #333333;
+    width: 340px;
+    align-self: flex-end;
+
+}
+
+.pricing_base_2 {
+    background-color: #333333;
+    width: 340px;
+
+}
+
+.pricing_base_3 {
+    background-color: #333333;
+    width: 340px;
+    align-self: flex-end;
+
+}
+
+.row_pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing_base-name {
+    border-bottom: 1px solid #f5f5f5;
+    font-weight: bold;
+    padding: 16px 0;
+    font-size: 20px;
+    color: #eeeeee;
+}
+
+.pricing_base-cost {
+    border-bottom: 1px solid #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 95px;
+    color: #eeeeee;
+    line-height: 50px;
+    padding: 30px 0 0 0;
+}
+
+.price_container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dollar {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.pricing_base-conditions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+#pricing_base-dop {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #ff8b38;
+    padding: 11px 0;
+}
+
+.lines1_3 {
+
+}
+
+.lines2{
+
+}
+
+.pricing_base_1 ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 3em;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+}
+.pricing_base_2 ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 3em;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.pricing_base_3 ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 3em;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.lin1::after {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+
+.wrap {
+    margin: 0 ;
+    padding 0;
+    max-width: 1110px;
+    box-sizing: border-box;
+}
+
+.col_1 {
+    width: 340px;;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    /* vertical-align: top; */
+    background-color: #333333;
+    vertical-align: baseline;
+}
+
+.col_2 {
+    width: 340px;
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    /* vertical-align: top; */
+    background-color: #333333;
+    vertical-align: baseline;
+}
+
+.col_3 {
+    width: 340px;;
+    margin: 0 0 0 20px;
+    display: inline-block;
+    /* vertical-align: top; */
+    background-color: #333333;
+    vertical-align: baseline;
+}
+
+.col h3 {
+    background-color: #900;
+    color: #fff;
+    margin: 0 -15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.list {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 3em;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+ul.list li {
+    border-bottom: 1px solid #f5f5f5;
 }
