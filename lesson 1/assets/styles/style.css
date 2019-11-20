@@ -370,3 +370,44 @@ button {
 }
 
 /* Contact Us END */
+
+/* Footer */
+
+.footer_size {
+    padding: 40px 0 15px 0;
+}
+.footer_icon {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+ul.footer_icon li {
+    display: inline;
+    margin: 0 16px;
+}
+
+.footer_group {
+    width: 1em;
+    height: 1em;
+    fill: #cccccc;
+    font-size: 23px;
+    color: #cccccc;
+}
+footer {
+    background-color: #000000;
+    text-align: center;
+}
+
+.footer_size ul{
+    justify-content: center;
+}
+
+.indent_icon {
+    font-size: 12px;
+}
+
+
+
+/* Footer END */
