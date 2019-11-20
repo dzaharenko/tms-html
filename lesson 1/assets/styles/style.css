@@ -7,6 +7,8 @@
 * {
     margin: 0;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 body {
@@ -62,10 +64,9 @@ h2.download_white:after {
     background-color: #ffffff;
 }
 
-.container {
+._container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 110px 0 105px 0;
 }
 
 .row {
@@ -80,10 +81,12 @@ h2.download_white:after {
 
 .benefit {
     text-align: center;
+    padding: 110px 0 105px 0;
 }
 
-.benefit__p {
+._indent {
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .download__p {
@@ -114,15 +117,13 @@ h2.download_white:after {
     margin-bottom: 22px;
 }
 
-.pricing_container_color {
+.pricing_color {
     height: 880px;
     background-color: #f5f5f5;
 }
 
-.pricing_container {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 110px 0;
+.pricing {
+    padding: 110px 0 79px 0;
 }
 
 .download_container {
@@ -215,6 +216,7 @@ h2.download_white:after {
     /* vertical-align: top; */
     background-color: #333333;
     vertical-align: baseline;
+    text-align: center;
 }
 
 .col_2 {
@@ -224,6 +226,7 @@ h2.download_white:after {
     /* vertical-align: top; */
     background-color: #333333;
     vertical-align: baseline;
+    text-align: center;
 }
 
 .col_3 {
@@ -233,6 +236,7 @@ h2.download_white:after {
     /* vertical-align: top; */
     background-color: #333333;
     vertical-align: baseline;
+    text-align: center;
 }
 
 .list {
@@ -247,20 +251,21 @@ h2.download_white:after {
 
 ul.list li {
 border-bottom: 1px solid #f5f5f5;
-padding: 10.5px 0;
+padding: 11px 0;
 }
 
 /* PRICING OPTIONS END */
 
 /* Social Media */
 
-.social_media_container {
-    max-width: 1110px;
-    margin: 0 auto;
+.social_media {
     padding: 18px 0;
     display: flex;
-    box-shadow: 0px 2px 3px -2px rgba(150,150,150,0.75);
     position: relative;
+}
+
+.box-shadow_social_media {
+    box-shadow: 0px 2px 3px -2px rgba(150,150,150,0.75);
 }
 
 .social_info {
@@ -288,13 +293,10 @@ ul.social_icon li:nth-child(7) {
 margin-right: 0;
 }
 
-.icon {
+.icon_group {
     width: 1em;
     height: 1em;
     fill: #cccccc;
-}
-
-.benefit_icon {
     font-size: 45px;
     color: #cccccc;
 }
@@ -304,3 +306,67 @@ margin-right: 0;
 }
 
 /* Social Media END */
+
+/* Contact Us */
+
+.contact {
+    padding: 110px 0 80px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact_cell {
+    width: 100%;
+}
+
+.contact_field {
+    width: 100%;
+    line-height: 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact_cell {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea {
+    line-height: 1.4;
+    resize: none;
+}
+
+input, textarea {
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 135px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px #d6d6d6;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 42px;
+}
+
+/* Contact Us END */
