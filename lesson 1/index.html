@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Axit Page</title>
     <link rel="stylesheet" href="./assets/styles/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
@@ -31,8 +30,55 @@
         <path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
     </symbol>
 </svg>
-<div class="box-shadow_social_media">
-<div class="social_media _container">
+<header>
+    <div class="header">
+        <div class="container">
+            <a href="#"><img class="logo-small" src="./assets/images/logo.png" alt="logo"></a>
+            <ul class="menu">
+                <li>
+                    <a href="#Features">Features</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="#Reviews">Reviews</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainBanner">
+        <div class="mainBanner-shadow">
+            <div class="main container">
+                <div class="c-1">
+                    <img class="logo-bg" src="./assets/images/logo.png" alt="logo"></a>
+                    <h2 class="h2-text">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+                    <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.</p>
+                    <button class="button _outline">Download</button>
+                </div>
+                <form action="#" class="registr">
+                    <h3>Try Your <span class="orange-txt">FREE</span> Trial Today</h3>
+                    <div class="row_column">
+                        <input class="row_column_field" type="text" placeholder="Name" name="name">
+                        <input class="row_column_field" type="email" placeholder="Email" name="email">
+                        <input class="row_column_field" type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <input type="submit" value="Get Started">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="box-shadow_social_media">
+<div class="social_media container">
     <div class="social_info">
         <h3>Social Media</h3>
         <p class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
@@ -89,8 +135,8 @@
         </li>
     </ul>
 </div>
-</div>
-<div class="benefit _container">
+</section>
+<section class="benefit container" id="Features">
     <h2>Why this is awesome</h2>
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="row">
@@ -116,9 +162,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
         </div>
     </div>
-</div>
+</section>
 <div class="pricing_color">
-    <div class="pricing _container">
+    <section class="pricing container">
         <h2>Pricing options</h2>
         <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="wrap">
@@ -126,7 +172,7 @@
                 <p class="pricing_base-name">Basic</p>
                 <p class="pricing_base-cost"><span class="dollar">$</span>0</p>
                 <p class="pricing_base-conditions">Free for Life</p>
-                <hr size="5" color="#ff8b38" />
+                <p class="pricing_base-dop"></p>
                 <ul class="list">
                     <li>1 gb of space</li>
                     <li>10 gb of bandwidth</li>
@@ -140,7 +186,7 @@
                 <p class="pricing_base-name">Professional</p>
                 <p class="pricing_base-cost"><span class="dollar">$</span>19</p>
                 <p class="pricing_base-conditions">Monthly Payment</p>
-                <p id="pricing_base-dop">OUR MOST POPULAR</p>
+                <p class="pricing_base-dop">OUR MOST POPULAR</p>
                 <ul class="list">
                     <li>5 gb of space</li>
                     <li>50 gb of bandwidth</li>
@@ -154,7 +200,7 @@
                 <p class="pricing_base-name">Enterprise</p>
                 <p class="pricing_base-cost"><span class="dollar">$</span>70</p>
                 <p class="pricing_base-conditions">Monthly Payment</p>
-                <hr size="5" color="#ff8b38" />
+                <p class="pricing_base-dop"></p>
                 <ul class="list">
                     <li>Unlimited space</li>
                     <li>unlimited bandwidth</li>
@@ -165,21 +211,49 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 </div>
-<div class="download_container">
+<section class="comment container">
+    <h2>What our customers are saying</h2>
+    <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="comment_wrap">
+        <blockquote>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+            <img src="./assets/images/cl_img.png" alt="" style="float: left" />
+            <div class="info_client">
+                <h3>Jeremy H.</h3>
+                <span>Manager</span>
+            </div>
+        </blockquote>
+        <blockquote>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+            <img src="./assets/images/cl_img.png" alt="" style="float: left" />
+            <div class="info_client">
+                <h3>Jeremy H.</h3>
+                <span>Manager</span>
+            </div>
+        </blockquote>
+        <blockquote>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+            <img src="./assets/images/cl_img.png" alt="" style="float: left" />
+            <div class="info_client">
+                <h3>Jeremy H.</h3>
+                <span>Manager</span>
+            </div>
+        </blockquote>
+    </div>
+</section>
+<section class="download_container">
     <div class="download_container_color">
         <div class="benefit download">
-            <h2 class="download_white">STYLISH AXURE DESIGN</h2>
+            <h2 class="download_white">Stylish axure design</h2>
             <p class="download__p">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
-            <div class="download_link">
-                <a href="#">Download</a>
-            </div>
+            <button class="button _outline">Download</button>
         </div>
     </div>
-</div>
-<div class="contact _container">
-    <h2>CONTACT US</h2>
+</section>
+<section class="contact container">
+    <h2>Contact us</h2>
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <form>
         <div class="row">
@@ -194,9 +268,9 @@
         </div>
         <button class="button">Send Message</button>
     </form>
-</div>
+</section>
 <footer>
-    <div class="footer_size _container">
+    <div class="footer_size container" id="Contact">
         <ul class="footer_icon">
             <li><a href="#">
                 <svg class="footer_group">
@@ -247,7 +321,7 @@
                 </a>
             </li>
         </ul>
-        <p class="indent_icon">© 2015 Axure Themes</p>
+        <p class="indent_icon">&copy; 2015 Axure Themes</p>
     </div>
 </footer>
 </body>
