@@ -78,12 +78,12 @@
     </div>
 </header>
 <section class="box-shadow_social_media">
-<div class="social_media container">
-    <div class="social_info">
-        <h3>Social Media</h3>
-        <p class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Aenean euismod bibendum laoreet.</p>
-    </div>
+    <div class="social_media container">
+        <div class="social_info">
+            <h3>Social Media</h3>
+            <p class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Aenean euismod bibendum laoreet.</p>
+        </div>
     <ul class="social_icon">
         <li><a href="#">
             <svg class="icon_group">
@@ -134,8 +134,24 @@
             </a>
         </li>
     </ul>
-</div>
+    </div>
 </section>
+<div class="tabsInfo_color">
+    <section class="tabsInfo container">
+        <div class="tabsInfo_button">
+            <button type="button" class="tab" name="tab1">tab 1</button>
+            <button type="button" class="tab" name="tab2">tab 2</button>
+            <button type="button" class="tab" name="tab3">tab 3</button>
+        </div>
+        <article class="tabsInfo_text" id="tab1">
+            <h3>Tabs with soft transitioning effect.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+            <button class="button">Download</button>
+        </article>
+        <img src="./assets/images/city.png" alt="city" />
+    </section>
+</div>
 <section class="benefit container" id="Features">
     <h2>Why this is awesome</h2>
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -258,7 +274,10 @@
     <form>
         <div class="row">
             <div class="cell contact_cell">
-                <input class="contact_field" type="text" placeholder="Name" name="name">
+                <div class="text-field">
+                    <input id="name" class="text-field_input contact_field" type="text" placeholder=" " name="name">
+                    <label class="text-field_label" for="name">Name</label>
+                </div>
                 <input class="contact_field" type="email" placeholder="Email" name="email">
                 <input class="contact_field" type="text" placeholder="Subject" name="subject">
             </div>
