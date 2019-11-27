@@ -57,12 +57,12 @@ h2._left:after {
     margin: 0;
 }
 
-h2.download_white {
+h2.download_head {
     color: #ffffff;
     margin-bottom: 32px;
 }
 
-h2.download_white:after {
+h2.download_head:after {
     background-color: #ffffff;
 }
 
@@ -136,6 +136,7 @@ h2.download_white:after {
     max-width: 1110px;
     margin: 0 auto;
     padding: 64px 0 62px 0;
+    text-align: center;
 }
 
 .download_link {
