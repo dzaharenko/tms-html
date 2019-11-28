@@ -35,42 +35,32 @@
     <div class="header">
         <div class="container">
             <a href="#"><img class="logo-small" src="./assets/images/logo.png" alt="logo"></a>
-            <ul class="menu">
-                <li>
+            <div class="menu borderXwidth">
                     <a href="#Features">Features</a>
-                </li>
-                <li>
                     <a href="#About">About</a>
-                </li>
-                <li>
                     <a href="#Pricing">Pricing</a>
-                </li>
-                <li>
                     <a href="#Reviews">Reviews</a>
-                </li>
-                <li>
                     <a href="#Contact">Contact</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </div>
     <div class="mainBanner">
         <div class="mainBanner-shadow">
             <div class="main container">
-                <div class="c-1">
-                    <img class="logo-bg" src="./assets/images/logo.png" alt="logo"></a>
-                    <h2 class="h2-text">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
-                    <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                <div class="blockInfo">
+                    <img class="logo-bg" src="./assets/images/logo.png" alt="logo" />
+                    <h2 class="blockInfo__text">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+                    <p class="blockInfo__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                         accumsan et viverra justo commodo.</p>
                     <button class="button _outline">Download</button>
                 </div>
-                <form action="#" class="registr">
-                    <h3>Try Your <span class="orange-txt">FREE</span> Trial Today</h3>
-                    <div class="row_column">
-                        <input class="row_column_field" type="text" placeholder="Name" name="name">
-                        <input class="row_column_field" type="email" placeholder="Email" name="email">
-                        <input class="row_column_field" type="password" placeholder="Password" name="password" required>
+                <form action="#" class="formRegistr">
+                    <h3>Try Your <span class="head_color">FREE</span> Trial Today</h3>
+                    <div class="formRegistr__row">
+                        <input class="formRegistr__field" type="text" placeholder="Name" name="name">
+                        <input class="formRegistr__field" type="email" placeholder="Email" name="email">
+                        <input class="formRegistr__field" type="password" placeholder="Password" name="password" required>
                     </div>
                     <input type="submit" value="Get Started">
                 </form>
@@ -82,59 +72,59 @@
     <div class="social_media container">
         <div class="social_info">
             <h3>Social Media</h3>
-            <p class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            <p class="_lineinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                 Aenean euismod bibendum laoreet.</p>
         </div>
-    <ul class="social_icon">
-        <li><a href="#">
-            <svg class="icon_group">
-                <use href="#facebook" />
-            </svg>
-            </a>
-        </li>
-        <li>
-        <a href="#">
-            <svg class="icon_group">
-                <use href="#twitter" />
-            </svg>
-        </a>
-        </li>
-        <li>
-        <a href="#">
-            <svg class="icon_group">
-                <use href="#google" />
-            </svg>
-        </a>
-        </li>
-        <li>
-        <a href="#">
-            <svg class="icon_group">
-                <use href="#pinterest" />
-            </svg>
-        </a>
-        </li>
-        <li>
-            <a href="#">
+        <ul class="social_icon">
+            <li><a href="#">
                 <svg class="icon_group">
-                    <use href="#instagram" />
+                    <use href="#facebook" />
                 </svg>
             </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="icon_group">
-                    <use href="#stumbleupon" />
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="icon_group">
-                    <use href="#rss" />
-                </svg>
-            </a>
-        </li>
-    </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#twitter" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#google" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#pinterest" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#instagram" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#stumbleupon" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon_group">
+                        <use href="#rss" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
 </section>
 <div class="tabsInfo_color">
@@ -181,7 +171,7 @@
     </div>
 </section>
 <div class="pricing_color">
-    <section class="pricing container">
+    <section class="pricing container" id="Pricing">
         <h2>Pricing options</h2>
         <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="wrap">
@@ -230,7 +220,7 @@
         </div>
     </section>
 </div>
-<section class="comment container">
+<section class="comment container" id="Reviews">
     <h2>What our customers are saying</h2>
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="comment_wrap">
@@ -260,10 +250,10 @@
         </blockquote>
     </div>
 </section>
-<section class="download_container">
-    <div class="download_container_color">
-        <div class="benefit download">
-            <h2 class="download_white">Stylish axure design</h2>
+<section class="download_block">
+    <div class="download_block_color">
+        <div class="download_container">
+            <h2 class="download__head">Stylish axure design</h2>
             <p class="download__p">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
             <button class="button _outline">Download</button>
         </div>
@@ -276,11 +266,17 @@
         <div class="row">
             <div class="cell contact_cell">
                 <div class="text-field">
-                    <input id="name" class="text-field_input contact_field" type="text" placeholder=" " name="name">
-                    <label class="text-field_label" for="name">Name</label>
+                    <input id="name" class="text-field__input contact_field" type="text" placeholder=" " name="name">
+                    <label class="text-field__label" for="name">Name</label>
                 </div>
-                <input class="contact_field" type="email" placeholder="Email" name="email">
-                <input class="contact_field" type="text" placeholder="Subject" name="subject">
+                <div class="text-field">
+                    <input id="email" class="text-field__input contact_field" type="email" placeholder=" " name="email">
+                    <label class="text-field__label" for="email">Email</label>
+                </div>
+                <div class="text-field">
+                    <input id="subject" class="text-field__input contact_field" type="text" placeholder=" " name="subject">
+                    <label class="text-field__label" for="subject">Subject</label>
+                </div>
             </div>
             <div class="cell contact_cell">
                 <textarea class="contact_field" name="message" id="" rows="7" placeholder="Message"></textarea>
@@ -341,7 +337,7 @@
                 </a>
             </li>
         </ul>
-        <p class="indent_icon">&copy; 2015 Axure Themes</p>
+        <p class="indent_icon">&copy 2015 Axure Themes</p>
     </div>
 </footer>
 </body>
