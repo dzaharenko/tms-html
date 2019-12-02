@@ -45,11 +45,11 @@
         </div>
     </div>
     <div class="mainBanner">
-        <div class="mainBanner-shadow">
+        <div class="mainBanner_shadow">
             <div class="main container">
                 <div class="blockInfo">
                     <img class="logo-bg" src="./assets/images/logo.png" alt="logo" />
-                    <h2 class="blockInfo__text">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+                    <h2 class="blockInfo__head">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
                     <p class="blockInfo__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                         accumsan et viverra justo commodo.</p>
@@ -143,30 +143,34 @@
         <img src="./assets/images/city.png" alt="city" />
     </section>
 </div>
-<section class="benefit container" id="Features">
-    <h2>Why this is awesome</h2>
-    <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div class="row">
-        <div class="cell">
-            <div class="benefit__image-wrap">
-                <i class="far fa-lightbulb benefit__image"></i>
-            </div>
-            <h3 class="benefit__h3">Thoughtful Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+<section class="advantages container" id="Features">
+    <div class="wrapper1">
+        <div class="advantages_header__text advantages-header">
+            <h2 class="h2_text">Why this is awesome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="cell">
-            <div class="benefit__image-wrap">
-                <i class="far fa-keyboard benefit__image"></i>
+        <div class="advantages_body__info advantages-body">
+            <div class="advantages_body__col">
+                <div class="advantages__image-wrap1">
+                    <i class="far fa-lightbulb advantages__image1"></i>
+                </div>
+                <h3>Thoughtful Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
             </div>
-            <h3 class="benefit__h3">Well Crafted</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-        </div>
-        <div class="cell">
-            <div class="benefit__image-wrap">
-                <i class="fas fa-bolt benefit__image"></i>
+            <div class="advantages_body__col">
+                <div class="advantages__image-wrap1">
+                    <i class="far fa-keyboard advantages__image1"></i>
+                </div>
+                <h3>Well Crafted</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
             </div>
-            <h3 class="benefit__h3">Easy to Customize</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            <div class="advantages_body__col">
+                <div class="advantages__image-wrap1">
+                    <i class="fas fa-bolt advantages__image1"></i>
+                </div>
+                <h3>Easy to Customize</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -176,10 +180,10 @@
         <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="wrap">
             <div class="col_1">
-                <p class="pricing_base-name">Basic</p>
-                <p class="pricing_base-cost"><span class="dollar">$</span>0</p>
-                <p class="pricing_base-conditions">Free for Life</p>
-                <p class="pricing_base-dop"></p>
+                <p class="col__name">Basic</p>
+                <p class="col__cost"><span class="dollar">$</span>0</p>
+                <p class="col__conditions">Free for Life</p>
+                <p class="col__dop"></p>
                 <ul class="list">
                     <li>1 gb of space</li>
                     <li>10 gb of bandwidth</li>
@@ -190,10 +194,10 @@
                 </ul>
             </div>
             <div class="col_2">
-                <p class="pricing_base-name">Professional</p>
-                <p class="pricing_base-cost"><span class="dollar">$</span>19</p>
-                <p class="pricing_base-conditions">Monthly Payment</p>
-                <p class="pricing_base-dop">OUR MOST POPULAR</p>
+                <p class="col__name">Professional</p>
+                <p class="col__cost"><span class="dollar">$</span>19</p>
+                <p class="col__conditions">Monthly Payment</p>
+                <p class="col__dop">OUR MOST POPULAR</p>
                 <ul class="list">
                     <li>5 gb of space</li>
                     <li>50 gb of bandwidth</li>
@@ -204,10 +208,10 @@
                 </ul>
             </div>
             <div class="col_3">
-                <p class="pricing_base-name">Enterprise</p>
-                <p class="pricing_base-cost"><span class="dollar">$</span>70</p>
-                <p class="pricing_base-conditions">Monthly Payment</p>
-                <p class="pricing_base-dop"></p>
+                <p class="col__name">Enterprise</p>
+                <p class="col__cost"><span class="dollar">$</span>70</p>
+                <p class="col__conditions">Monthly Payment</p>
+                <p class="col__dop"></p>
                 <ul class="list">
                     <li>Unlimited space</li>
                     <li>unlimited bandwidth</li>
@@ -250,8 +254,8 @@
         </blockquote>
     </div>
 </section>
-<section class="download_block">
-    <div class="download_block_color">
+<section class="download">
+    <div class="download_shadow">
         <div class="download_container">
             <h2 class="download__head">Stylish axure design</h2>
             <p class="download__p">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
@@ -266,27 +270,30 @@
         <div class="row">
             <div class="cell contact_cell">
                 <div class="text-field">
-                    <input id="name" class="text-field__input contact_field" type="text" placeholder=" " name="name">
+                    <input id="name" class="text-field__text contact_field" type="text" placeholder=" " name="name">
                     <label class="text-field__label" for="name">Name</label>
                 </div>
                 <div class="text-field">
-                    <input id="email" class="text-field__input contact_field" type="email" placeholder=" " name="email">
+                    <input id="email" class="text-field__text contact_field" type="email" placeholder=" " name="email">
                     <label class="text-field__label" for="email">Email</label>
                 </div>
                 <div class="text-field">
-                    <input id="subject" class="text-field__input contact_field" type="text" placeholder=" " name="subject">
+                    <input id="subject" class="text-field__text contact_field" type="text" placeholder=" " name="subject">
                     <label class="text-field__label" for="subject">Subject</label>
                 </div>
             </div>
             <div class="cell contact_cell">
-                <textarea class="contact_field" name="message" id="" rows="7" placeholder="Message"></textarea>
+                <div class="text-field">
+                    <textarea id="message" class="text-field__text contact_field" name="message" rows="7" placeholder=" "></textarea>
+                    <label class="text-field__label" for="message">Message</label>
+                </div>
             </div>
         </div>
         <button class="button">Send Message</button>
     </form>
 </section>
 <footer>
-    <div class="footer_size container" id="Contact">
+    <div class="footer container" id="Contact">
         <ul class="footer_icon">
             <li><a href="#">
                 <svg class="footer_group">

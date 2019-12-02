@@ -81,7 +81,7 @@ h2.download__head:after {
     padding: 0 20px;
 }
 
-.benefit {
+.advantages {
     text-align: center;
     padding: 110px 0 105px 0;
 }
@@ -99,7 +99,7 @@ h2.download__head:after {
     font-weight: 300;
 }
 
-.benefit__image-wrap {
+.advantages__image-wrap {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -110,16 +110,16 @@ h2.download__head:after {
     border-radius: 50%;
 }
 
-.benefit__image {
+.advantages__image {
     color: var(--primary-color);
     font-size: 32px;
 }
 
-.benefit__h3 {
+.advantages__h3 {
     margin-bottom: 22px;
 }
 
-.download_block {
+.download {
     width: 100%;
     background-image: url(../images/u25_state0.jpg);
     background-size: cover;
@@ -127,7 +127,7 @@ h2.download__head:after {
     background-repeat: no-repeat;
 }
 
-.download_block_color {
+.download_shadow {
     background-color: rgba(0,0,0,0.6);
     width: 100%;
 }
@@ -158,7 +158,7 @@ h2.download__head:after {
     padding: 110px 0 79px;
 }
 
-.pricing_base-name {
+.col__name {
     border-bottom: 1px solid #f5f5f5;
     font-weight: bold;
     padding: 16px 0;
@@ -166,7 +166,7 @@ h2.download__head:after {
     color: #eeeeee;
 }
 
-.pricing_base-cost {
+.col__cost {
     border-bottom: 1px solid #f5f5f5;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -182,7 +182,7 @@ h2.download__head:after {
     font-size: 35px;
 }
 
-.pricing_base-conditions {
+.col__conditions {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-style: italic;
@@ -190,7 +190,7 @@ h2.download__head:after {
     padding: 15px 0;
 }
 
-.pricing_base-dop {
+.col__dop {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -416,10 +416,6 @@ ul.social_icon li:nth-child(7) {
     text-align: center;
 }
 
-.contact_cell {
-    width: 100%;
-}
-
 .contact_field {
     width: 100%;
     line-height: 19px;
@@ -440,12 +436,12 @@ ul.social_icon li:nth-child(7) {
 .text-field__label {
     position: absolute;
     left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10px;
+    transform: translateY(0);
     transition: all 200ms ease-in-out ;
 }
 
-.text-field__input:focus + .text-field__label, .text-field__input:not(:placeholder-shown) + .text-field__label {
+.text-field__text:focus + .text-field__label, .text-field__text:not(:placeholder-shown) + .text-field__label {
     top: 0;
     transform: translateY(-75%);
 }
@@ -490,7 +486,7 @@ button {
 
 /* Footer */
 
-.footer_size {
+.footer {
     padding: 40px 0 15px 0;
 }
 .footer_icon {
@@ -517,7 +513,7 @@ footer {
     text-align: center;
 }
 
-.footer_size ul{
+.footer ul{
     justify-content: center;
 }
 
@@ -568,7 +564,7 @@ div.menu a{
 .menu a:last-child {
     margin-right: 0;
 }
-.mainBanner-shadow {
+.mainBanner_shadow {
     background-color: rgba(0,0,0,0.52);
 }
 .mainBanner {
@@ -595,7 +591,7 @@ div.menu a{
     float: none;
 }
 
-.blockInfo__text {
+.blockInfo__head {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -606,7 +602,7 @@ div.menu a{
     text-align: left;
 }
 
-h2.blockInfo__text:after {
+h2.blockInfo__head:after {
     content: '';
     display: block;
     width: 64px;
@@ -649,7 +645,7 @@ h2.blockInfo__text:after {
 }
 
 .button:hover {
-    box-shadow: 2px 5px 20px black;
+    box-shadow: 2px 8px 20px var(--primary-color);
 }
 
 .formRegistr {
@@ -713,7 +709,7 @@ input[type="submit"]:hover {
     .tabsInfo img {
         display: none;
     }
-    .benefit {
+    .advantages {
         padding: 110px 0 80px 0;
     }
     .row {
@@ -763,6 +759,9 @@ input[type="submit"]:hover {
     .button {
         margin-top: 20px;
     }
+    .text-field__text:focus + .text-field__label, .text-field__text:not(:placeholder-shown) + .text-field__label {
+        display: none;
+    }
 }
 
 @media (max-width: 1115px) {
@@ -791,6 +790,15 @@ input[type="submit"]:hover {
     .main {
         padding: 110px 20px 140px;
     }
+    .contact_field {
+        width: 100%;
+        line-height: 19px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .text-field__text:focus + .text-field__label, .text-field__text:not(:placeholder-shown) + .text-field__label {
+        display: none;
+    }
 }
 
 @media (max-width: 760px) {
@@ -806,10 +814,10 @@ input[type="submit"]:hover {
         width: 75%;
         margin-bottom: 50px;
     }
-    .blockInfo__text {
+    .blockInfo__head {
         text-align: center;
     }
-    h2.blockInfo__text:after {
+    h2.blockInfo__head:after {
         margin-left: auto;
         margin-right: auto;
     }
@@ -841,7 +849,7 @@ input[type="submit"]:hover {
     .tabsInfo img {
         display: none;
     }
-    .benefit, .pricing, .comment, .contact {
+    .advantages, .pricing, .comment, .contact {
         padding: 50px 0 50px;
     }
     ._indent {
@@ -863,9 +871,11 @@ input[type="submit"]:hover {
     .button {
         margin-top: 20px;
     }
+    .text-field__text:focus + .text-field__label, .text-field__text:not(:placeholder-shown) + .text-field__label {
+        display: none;
+    }
 }
 
-/* Top and Bottom borders go out */
 div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
 {
     position: absolute;
@@ -924,4 +934,49 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
 {
     opacity: 1;
     width: 100%;
+}
+
+.advantages_header__text {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.advantages_body__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.advantages_body__col {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.advantages__image-wrap1 {
+    display: grid;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.advantages__image1 {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-row-gap: 83px;
+    grid-template-areas: "header header header" "boddy boddy boddy";
+}
+
+.advantages-header {
+    grid-area: header;
+}
+
+.advantages-body {
+    grid-area: boddy;
 }
